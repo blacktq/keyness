@@ -13,5 +13,5 @@
 ##The log-ratio and its purpose is described by Andrew Hardie [here](http://cass.lancs.ac.uk/?p=1133).
 ##The code produces outputs similar to the online calculator authored by Paul Rayson, which is [here](http://ucrel.lancs.ac.uk/llwizard.html).
 
-#Included in the repository is a corpus of campaign speeches by Clinton and Trump, as well as a sample output file based on that corpus.
-#Note that R code requires the following packages: tm, tm.plugin.webmining, and dplyr. The second of these is used to strip out tagged data between angle brackets that we do not want to be counted.
+##Included in the repository is a corpus of campaign speeches by Clinton and Trump, as well as a sample output file based on that corpus.
+##Note that R code requires the following packages: tm, tm.plugin.webmining, and dplyr. The second of these is used to strip out tagged data between angle brackets that we do not want to be counted.
