@@ -1,4 +1,4 @@
-# This is a repository for generating keyness values using R. Keyness is a common caluculation in corpus linguistics that compares word frequencies in one corpus (a target corpus) to another (a reference corpus). It is a feature of off-the-shelf concordancers like AntConc and WordSmith. This code has a couple of advantages over using concordancing software. First, it can more efficiently handle larger collections of text. Second, it produces a .csv table that compliles a number of potentially relevant measures by column:
+# This is a repository for generating keyness values using R. Keyness is a common calculation in corpus linguistics that compares word frequencies in one corpus (a target corpus) to another (a reference corpus). It is a feature of off-the-shelf concordancers like AntConc and WordSmith. This code has a couple of advantages over using concordancing software. First, it can more efficiently handle larger collections of text. Second, it produces a .csv table that compiles a number of potentially relevant measures by column:
 
 ##1) a word list of both corpora
 ##2 word frequencies for corpus x
