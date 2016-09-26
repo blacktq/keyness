@@ -1,1 +1,1 @@
-# log-likelihood
+# This is a repository for calculating keyness values using R. Keyness is a common calculation in corpus linguistics that compares word frequencies in one corpus (a target corpus) to another (a reference corpus). It is a feature of off-the-shelf concordancers like AntConc and WordSmith.
