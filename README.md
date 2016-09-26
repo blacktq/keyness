@@ -11,4 +11,4 @@
 ##9) an indictor showing either x>y or x<y for normalized frequencies
 
 ##The log-ratio and its purpose is described by Andrew Hardie [here](http://cass.lancs.ac.uk/?p=1133).
-##The code produces outputs similar to Paul Raysons online calculator, which is [here](http://ucrel.lancs.ac.uk/llwizard.html).
+##The code produces outputs similar to the online calculator authored by Paul Rayson, which is [here](http://ucrel.lancs.ac.uk/llwizard.html).
