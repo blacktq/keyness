@@ -9,3 +9,6 @@
 ##7 associated p-values for the keyness values in column 6
 ##8) the log-ratio as an effect size of log-likelihood
 ##9) an indictor showing either x>y or x<y for normalized frequencies
+
+##The log-ratio and its purpose is described by Andrew Hardie [here](http://cass.lancs.ac.uk/?p=1133).
+##The code produces outputs similar to Paul Rayson's online calculator, which is [here](http://cass.lancs.ac.uk/?p=1133).
