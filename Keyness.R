@@ -72,7 +72,7 @@ normalize.b <- function (frequency.b) {
 percent.y <- mapply(normalize.b, wf$freq.y)
 wf$percent.y <- percent.y
 
-#calcuate keyness
+#calculate keyness
 log.like <- function(frequency.a, frequency.b) { 
   expected.a <- total.a*((frequency.a+frequency.b)/(total.a+total.b))
   expected.b <- total.b*((frequency.a+frequency.b)/(total.a+total.b))
