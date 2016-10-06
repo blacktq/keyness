@@ -2,7 +2,7 @@ library(tm)
 library(tm.plugin.webmining)
 library(dplyr)
 
-#point tm to the two file folders that contain your target and reference corpora
+#after downloading and unzippling the sample corpus, point tm to the two file folders that contain your target and reference corpora
 #specify the relevant path
 docs.a <- Corpus(DirSource("~/Politics of English/Clinton-Trump Corpus/Clinton"))
 docs.b <- Corpus(DirSource("~/Politics of English/Clinton-Trump Corpus/Trump"))
