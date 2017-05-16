@@ -1,5 +1,4 @@
 library(tm)
-library(tm.plugin.webmining)
 library(dplyr)
 
 #after downloading and unzippling the sample corpus, point tm to the two file folders that contain your target and reference corpora
@@ -12,7 +11,7 @@ replace <- content_transformer(stringr::str_replace_all)
 
 #process the files in the first corpus
 docs.a = docs.a %>%
-  tm_map(extractHTMLStrip) %>%
+  tm_map(replace, "<.*?>", "") %>%
   tm_map(removeNumbers) %>%
   tm_map(tolower) %>%
   tm_map(PlainTextDocument) %>%
@@ -22,12 +21,11 @@ docs.a = docs.a %>%
   tm_map(removePunctuation) %>%
   tm_map(tolower) %>%
   tm_map(removeNumbers) %>%
-  tm_map(stripWhitespace) %>%
-  tm_map(PlainTextDocument)
+  tm_map(stripWhitespace)
 
 #process the files in the second corpus
 docs.b = docs.b %>%
-  tm_map(extractHTMLStrip) %>%
+  tm_map(replace, "<.*?>", "") %>%
   tm_map(removeNumbers) %>%
   tm_map(tolower) %>%
   tm_map(PlainTextDocument) %>%
@@ -37,8 +35,7 @@ docs.b = docs.b %>%
   tm_map(removePunctuation) %>%
   tm_map(tolower) %>%
   tm_map(removeNumbers) %>%
-  tm_map(stripWhitespace) %>%
-  tm_map(PlainTextDocument)
+  tm_map(stripWhitespace)
 
 #create a term matrix
 dtm.a <- DocumentTermMatrix(docs.a, control=list(wordLengths=c(1,1000)))
